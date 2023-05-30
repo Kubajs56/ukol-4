@@ -1,0 +1,72 @@
+.carousel{
+    margin: 70px;
+    padding: 0px;
+
+    max-height: 700px;
+
+}
+
+.idk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.idk1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    text-align:center;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: white !important;
+    margin-top: 0px;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.nevim{
+    display: flex;
+    flex-direction: row;
+}
+
+.nevim1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ahoj{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}

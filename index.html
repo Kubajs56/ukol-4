@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lepsi.nez.rohlik.cz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav style="background-color: gray" class="navbar navbar-expand-lg ">
+    <div style="margin-left: 550px;" class="container-fluid">
+        <img src="https://www.rohlik.group/profiles/kraken/themes/kraken_theme/images/logo.svg" alt="" width="50" height="34" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="margin-left: 25px" class=" collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="hodnoceni.html">IDK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nevim</a>
+                </li>
+
+                <div class="nevim" style="position: absolute; right:50px ">
+
+                    <li>
+                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-right: 15px"  class="btn btn-dark">Přihlásit se</button>
+                    </li>
+
+                    <li>
+                        <a href="kosik.html"><button  class="btn btn-dark" >Košík</button> </a>
+                    </li>
+
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Přihlášení</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <p style="margin-bottom: 2px" >E-mail </p>
+                    <input placeholder="example@example.com" style=" padding-right: 200px;  margin-bottom: 8px" type="text">
+                    <p style="margin-bottom: 2px" >Heslo </p>
+                    <input style="padding-right: 200px" type="password">
+                    <button style="margin-top: 8px" type="button" class="btn btn-dark">Přihlásit se</button>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                <button type="button" class="btn btn-dark">Nemáte účet?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="carouselExampleControls" class="idk1 carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cdn.myshoptet.com/usr/www.reznictvihendrich.cz/user/shop/big/534_rohlik.jpg?6167e555" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.myshoptet.com/usr/www.malinova.cz/user/shop/big/44_chleb-starocesky-kvasovy.jpg?5e4c424a" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.myshoptet.com/usr/www.reznictvihendrich.cz/user/shop/big/531_houska.jpg?6167de48" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="idk">
+
+    <div id="produkt-1" class="card" style="width: 18rem;">
+        <img src="https://recepty.cuketka.cz/media/recipe/main_imgs/vanocka_1_2048_55_vWVnRxd.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Vánočka</h5>
+            <p class="card-text">Výborná vánočka jako od babičky.</p>
+            <div class="idk1">
+                <h4 class="card-price">25Kč</h4>
+                <button id="produkt-1" style="margin-left: 65px" onclick="addtocart(this.id)" href="#" class="btn btn-dark">Pust jí tam!</button>
+            </div>
+        </div>
+    </div>
+    <div id="produkt-2" class="card" style="width: 18rem;">
+        <img src="https://jsme-tu-doma.cz/wp-content/uploads/2020/04/loup%C3%A1k_komprese.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> Loupák</h5>
+            <p class="card-text">výborný loupáček posypaný mákem.</p>
+            <div class="idk1">
+                <h4>13Kč</h4>
+                <button id="produkt-2" style="margin-left: 65px" onclick="addtocart(this.id)" href="#" class="btn btn-dark">Pust ho tam!</button>
+            </div>
+        </div>
+    </div>
+    <div id="produkt-3" class="card" style="width: 18rem;">
+        <img src="https://recepty.cuketka.cz/media/recipe/main_imgs/babovka_16x9_2048o.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bábovka</h5>
+            <p class="card-text">Chutná bábovka s příchutí vanilky a čokolády.</p>
+            <div class="idk1">
+                <h4>29Kč</h4>
+                <button id="produkt-3" style="margin-left: 65px" onclick="addtocart(this.id)" href="#" class="btn btn-dark">Pust jí tam!</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="idk">
+
+    <div id="produkt-4" class="card" style="width: 18rem;">
+        <img src="https://cdn.myshoptet.com/usr/www.reznictvihendrich.cz/user/shop/big/534_rohlik.jpg?6167e555" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Rohlík 43g</h5>
+            <p class="card-text">Výtečný jemný rohlík z pšeničného pečiva posypaný mákem a solí.</p>
+            <div class="idk1">
+                <h4>3Kč</h4>
+                <button id="produkt-4" style="margin-left: 65px" href="#" onclick="addtocart(this.id)" class="btn btn-dark">Pust ho tam!</button>
+            </div>
+        </div>
+    </div>
+    <div id="produkt-5" class="card" style="width: 18rem;">
+        <img src="https://cdn.myshoptet.com/usr/www.malinova.cz/user/shop/big/44_chleb-starocesky-kvasovy.jpg?5e4c424a" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> Chleba staročeský kváskový</h5>
+            <p class="card-text">Pořádný chlebík pro pravé chlapy! Z výtečného pečiva z babiččiny mouky.</p>
+            <div class="idk1">
+                <h4>39Kč</h4>
+                <button id="produkt-5" style="margin-left: 65px" href="#" onclick="addtocart(this.id)" class="btn btn-dark">Pust ho tam!</button>
+            </div>
+        </div>
+    </div>
+    <div id="produkt-6" class="card" style="width: 18rem;">
+        <img src="https://cdn.myshoptet.com/usr/www.reznictvihendrich.cz/user/shop/big/531_houska.jpg?6167de48" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Houska 75g</h5>
+            <p class="card-text">Chceš si dát něco co chutná jako rohlík, ale nechceš si dát rohlík? Tak přesně pro tebe je tahle houska!</p>
+            <div class="idk1">
+                <h4>7Kč</h4>
+                <button id="produkt-6" style="margin-left: 65px" href="#" onclick="addtocart(this.id)" class="btn btn-dark">Pust jí tam!</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+    <p class="col-md-4 mb-0">© 2023 lepsi.nez.rohlik.cz</p>
+
+</footer>
+
+</body>
+</html>

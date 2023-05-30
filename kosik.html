@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Košík</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<nav style="background-color: gray" class="navbar navbar-expand-lg ">
+    <div style="margin-left: 550px;" class="container-fluid">
+        <img src="https://www.rohlik.group/profiles/kraken/themes/kraken_theme/images/logo.svg" alt="" width="50" height="34" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="margin-left: 25px" class=" collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="hodnoceni.html">IDK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nevim</a>
+                </li>
+
+                <div class="nevim" style="position: absolute; right:50px ">
+
+                    <li>
+                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-right: 15px" class="btn btn-dark">Přihlásit se</button>
+                    </li>
+
+                    <li>
+                    <a href="kosik.html"> <button  class="btn btn-dark">Košík</button></a>
+                </li>
+
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 style="padding-left: 100px; margin: 15px " >Košík</h1>
+
+<h5 style="color: gray; padding-top: 100px; text-align: center">Tvůj košík zeje prázdnotou</h5>
+
+<a class="ahoj" href="index.html"><button class="btn btn-dark">Klikni pro nákup </button>  </a>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Přihlášení</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <p style="margin-bottom: 2px" >E-mail </p>
+                    <input placeholder="example@example.com" style=" padding-right: 200px;  margin-bottom: 8px" type="text">
+                    <p style="margin-bottom: 2px" >Heslo </p>
+                    <input style="padding-right: 200px" type="password">
+                    <button style="margin-top: 8px" type="button" class="btn btn-dark">Přihlásit se</button>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                <button type="button" class="btn btn-dark">Nemáte účet?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
